@@ -1,0 +1,52 @@
+/* ================= PRODUCT SLIDER ================= */
+.product-showcase {
+    padding: 60px 5%;
+    background-color: transparent;
+    text-align: center;
+}
+
+.product-showcase h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden; /* Ẩn phần ảnh tràn ra ngoài màn hình */
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 25px;
+    width: max-content;
+    cursor: grab;
+}
+
+.product-card {
+    width: 260px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(181, 136, 199, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    color: #444;
+}

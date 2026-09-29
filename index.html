@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <script src="js/slide.js" defer></script>
+    <link rel="stylesheet" href="css/menuhambuger.css">
+    <script src="js/menuhambuger.js" defer></script>
+    <link rel="stylesheet" href="css/hero-banner.css">
+    <link rel ="stylesheet" href="css/darkmode.css">
+    <script src="js/darkmode.js" defer></script>
+    <link rel ="stylesheet" href="css/scoll.css">
+    <script src="js/scoll.js" defer></script>
+    <script src="js/year.js" defer></script>
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">
+            About Me
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-item-header">Home</a>
+            
+            <div class="dropdown">
+                <a href="projects.html" class="nav-item-header">Projects</a>
+                <div class="dropdown-content">
+                    <a href="#">Web Book Store</a>
+                    <a href="#">Calculator</a>
+                    <a href="#">Dashboard</a>
+                    <a href="#">Tool Download</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="resume.html" class="nav-item-header">Resume</a>
+                <div class="dropdown-content">
+                    <a href="#">Download Resume</a>
+                    <a href="#">View Resume</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="contact.html" class="nav-item-header">Contact</a>
+            </div>
+        </nav>
+
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        
+            <div class="user-menu-container">
+                <i class="fa-solid fa-bars" id="userBtn" title="account & settings"></i>
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="user-info">
+                        <div>
+                            <h4>Vi Huy</h4>
+                            <h4>Help</h4>
+                            <h4>settings</h4>
+                            <h4>Logout</h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="theme-switch-wrapper">
+                        <span>Dark Mode</span>
+                        <label class="theme-switch" for="darkModeToggle">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="hero-banner">
+            <div class="hero-banner-content">
+                <h1>Welcome to<br>my website!</h1>
+                <p>My name is Huy and I am a PTIT student. This website serves as a platform to showcase my work, share my thoughts, and connect with like-minded individuals.</p>
+                
+                <div class="cta-group">
+                    <a href="#" class="btn-primary">Explore now</a>
+                    <a href="#" class="btn-secondary">Know more <i class="fa-solid fa-wand-magic-sparkles"></i></a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-x"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-banner-visual">
+                <video autoplay muted loop class="hero-video">
+                    <source src="video/video01.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="about-me">
+            <h2 class="reveal reveal-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text reveal reveal-left">
+                    <p>Hello everyone, my name is Vi Quang Huy, but you can also call me Huy Vi. I am currently a student in the UDU program at the Posts and Telecommunications Institute of Technology (PTIT).</p>
+                    <p>I have built a solid foundation in programming languages like python, C++, Java, and SQL. I am also very interested in becoming a software engineer and am working towards that goal.</p>
+                </div>
+                <img src="https://i.pinimg.com/1200x/1f/0c/46/1f0c46357bdfc8246ae7d99b9cbd9e14.jpg" alt="Artwork" class="about-img reveal reveal-right">
+            </div>
+        </div>
+        <div class="product-showcase">
+            <h2>My Work</h2>
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="product-card">
+                        <img src="img/anh01.jpg" alt="product 1">
+                        <h3>UX/UI anime </h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/anh02.jpg" alt="product 2">
+                        <h3>caculator</h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/anh03.png" alt="product 3">
+                        <h3>web book store</h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/anh04.png" alt="product 4">
+                        <h3>site form</h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/anh05.png" alt="product 5">
+                        <h3>Web sakura</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hobbies-section reveal reveal-up">
+            <div class="hobbies-container">
+
+                <div class="hobbies-header">
+                    <div class="hobbies-subtitle">PASSIONS & INTERESTS</div>
+                    <h2 class="hobbies-title">What<br>I do<br>for fun.</h2>
+                    <p class="hobbies-desc">Besides coding, I also enjoy exploring my interests and passions.</p>
+                </div>
+                <div class="hobbies-accordion">
+                    <div class="hobbies-item active">
+                        <button class="hobbies-question">
+                            Game & PC Gaming
+                            <span class="hobbies-icon">×</span>
+                        </button>
+                        <div class="hobbies-answer" style="max-height: 500px;">
+                            <p>I am a big fan of games from Kuro such as . Additionally, I often enjoy playing PC games on Steam.</p>
+                        </div>
+                    </div>
+                    <div class="hobbies-item">
+                        <button class="hobbies-question">
+                            Watching livestream 
+                            <span class="hobbies-icon">+</span>
+                        </button>
+                    </div>
+                    <div class="hobbies-item">
+                        <button class="hobbies-question">
+                            Build PC & Tech Gadgets
+                            <span class="hobbies-icon">+</span>
+                        </button>
+                    </div>
+                    <div class="hobbies-item">
+                        <button class="hobbies-question">
+                            3D Modeling & Animation
+                            <span class="hobbies-icon">+</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer user-select">
+        <div class="footer-container">
+            <div class="footer-letter">
+                <div class="letter-content">
+                    <h3 class="footer-title">Let's Connect!</h3>
+                    <p class="letter-desc">Join my community to stay updated with the latest news and updates.</p>
+                </div>
+                <form class="letter-form" action="#">
+                    <input type="email" class="letter-input" placeholder="Enter your email..." required>
+                    <button type="submit" class="letter-btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <nav class="footer-nav">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="footer-item"><a href="about.html" class="footer-link">About</a></li>
+                        <li class="footer-item"><a href="projects.html" class="footer-link">Projects</a></li>
+                        <li class="footer-item"><a href="resume.html" class="footer-link">CV / Resume</a></li>
+                        <li class="footer-item"><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h3 class="footer-title">Skills</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#" class="footer-link">English/japanese</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Web Development</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Docker & GitHub</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Ai generated content</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h3 class="footer-title">Archivements</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#" class="footer-link">Programming Competitions</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">leetcode</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h3 class="footer-title">About</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#" class="footer-link">student PTIT</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Hà Nội, Việt Nam</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Freelancer</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">KOC</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© <span id="currentYear"></span> Vi Quang Huy (Huy Vi).</p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

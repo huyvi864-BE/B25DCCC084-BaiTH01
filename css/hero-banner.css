@@ -1,0 +1,115 @@
+.hobbies-section {
+    background-color: #f3eef7;
+    padding: 100px 5%;
+    color: #333;
+}
+
+[data-theme="dark"] .hobbies-section { background-color: #1a1c23; }
+.hobbies-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.hobbies-header { flex: 0 0 35%; }
+
+.hobbies-subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #a99fc4;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.hobbies-subtitle::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #a095b6;
+}
+
+.hobbies-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    color: #2c3140;
+    margin-bottom: 30px;
+}
+[data-theme="dark"] .hobbies-title { color: #f4f4f4; }
+
+.hobbies-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+[data-theme="dark"] .hobbies-desc { color: #aaa; }
+
+.hobbies-accordion {
+    flex: 1;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+[data-theme="dark"] .hobbies-accordion { border-top-color: rgba(255, 255, 255, 0.1); }
+
+.hobbies-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+[data-theme="dark"] .hobbies-item { border-bottom-color: rgba(255, 255, 255, 0.1); }
+
+.hobbies-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 25px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #2c3140;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s;
+}
+[data-theme="dark"] .hobbies-question { color: #e0e0e0; }
+
+.hobbies-icon {
+    font-size: 1.5rem;
+    color: #8b5cf6;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+
+.hobbies-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.hobbies-answer p {
+    padding-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    padding-right: 40px;
+}
+[data-theme="dark"] .hobbies-answer p { color: #aaa; }
+
+@media (max-width: 900px) {
+    .hobbies-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .hobbies-header {
+        width: 100%;
+    }
+    .hobbies-title {
+        font-size: 3rem;
+    }
+}

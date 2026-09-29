@@ -1,0 +1,84 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f9f9f9;
+    --header-bg: #f1f1f1;
+    --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+    --primary-color: #a48aed;
+    --dropdown-bg: #ffffff;
+    --dropdown-border: transparent;
+    --dropdown-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --divider-color: #eeeeee;
+    --toggle-bg: #cccccc;
+    --toggle-knob: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f4f4f4;
+    --card-bg: #1e1e1e;
+    --header-bg: #1a1a1a;
+    --card-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+    
+    --dropdown-bg: var(--card-bg);
+    --dropdown-border: #333333;
+    --divider-color: #333333;
+    --toggle-bg: #555555;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.theme-switch input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+.theme-switch input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    background-color: var(--toggle-bg);
+    transition: background-color 0.4s;
+}
+
+.slider.round {
+    border-radius: 24px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--toggle-knob);
+    transition: transform 0.4s;
+}
