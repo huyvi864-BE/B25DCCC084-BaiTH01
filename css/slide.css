@@ -1,4 +1,3 @@
-/* ================= PRODUCT SLIDER ================= */
 .product-showcase {
     padding: 60px 5%;
     background-color: transparent;
@@ -13,7 +12,7 @@
 
 .slider-container {
     width: 100%;
-    overflow: hidden; /* Ẩn phần ảnh tràn ra ngoài màn hình */
+    overflow: hidden;
     position: relative;
 }
 
