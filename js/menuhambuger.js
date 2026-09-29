@@ -1,4 +1,3 @@
-
 const userBtn = document.getElementById('userBtn');
 const userDropdown = document.getElementById('userDropdown');
 if (userBtn && userDropdown) {
